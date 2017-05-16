@@ -2957,34 +2957,42 @@
     </column>
     <column id="658" parent="66" name="name">
       <Position>1</Position>
+      <Comment>姓名</Comment>
       <DataType>varchar(255)|0</DataType>
     </column>
     <column id="659" parent="66" name="intro">
       <Position>2</Position>
+      <Comment>简介</Comment>
       <DataType>text|0</DataType>
     </column>
     <column id="660" parent="66" name="gender">
       <Position>3</Position>
+      <Comment>性别</Comment>
       <DataType>char(2)|0</DataType>
     </column>
     <column id="661" parent="66" name="age">
       <Position>4</Position>
+      <Comment>年龄</Comment>
       <DataType>int(10) unsigned|0</DataType>
     </column>
     <column id="662" parent="66" name="height">
       <Position>5</Position>
+      <Comment>身高</Comment>
       <DataType>double(3,2)|0</DataType>
     </column>
     <column id="663" parent="66" name="price">
       <Position>6</Position>
+      <Comment>价格</Comment>
       <DataType>decimal(6,2)|0</DataType>
     </column>
     <column id="664" parent="66" name="dob">
       <Position>7</Position>
+      <Comment>出生日期</Comment>
       <DataType>date|0</DataType>
     </column>
     <column id="665" parent="66" name="time">
       <Position>8</Position>
+      <Comment>时间</Comment>
       <DataType>datetime|0</DataType>
     </column>
     <column id="666" parent="67" name="sno">

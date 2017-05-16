@@ -1,4 +1,4 @@
-DROP TABLE db_1702.student;
+DROP TABLE IF EXISTS db_1702.student;
 
 CREATE TABLE db_1702.student (
   name   VARCHAR(255) COMMENT '姓名', -- 255
@@ -12,8 +12,6 @@ CREATE TABLE db_1702.student (
 );
 
 INSERT INTO db_1702.student VALUES ('Tom', 'yellow', 'M', 4545, 1.7, 123.456, '1995-5-1', '2017-5-16 10:39:01');
-
-TRUNCATE TABLE db_1702.student;
 
 SELECT *
 FROM db_1702.student;

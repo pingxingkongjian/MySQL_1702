@@ -18,7 +18,7 @@ FROM db_1702.student_course;
 TRUNCATE TABLE db_1702.student_course;
 
 DELETE FROM db_1702.course
-WHERE id >2;
+WHERE id > 2;
 
 INSERT INTO db_1702.student VALUES (NULL ,'20170001','Tom','yellow',NULL ,NULL ,1.75,123.456,'1995-5-1','2017-5-1 9:45:01')
 

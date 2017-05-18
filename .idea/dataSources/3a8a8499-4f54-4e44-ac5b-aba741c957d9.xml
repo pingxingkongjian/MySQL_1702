@@ -128,15 +128,24 @@
     <index id="31" parent="9" name="fk_student_course_studentId">
       <ColNames>studentId</ColNames>
     </index>
-    <key id="32" parent="9" name="PRIMARY">
+    <index id="32" parent="9" name="fk_student_course_courseId">
+      <ColNames>courseId</ColNames>
+    </index>
+    <key id="33" parent="9" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="33" parent="9" name="fk_student_course_studentId">
+    <foreign-key id="34" parent="9" name="fk_student_course_studentId">
       <ColNames>studentId</ColNames>
       <RefSchemaName>db_1702</RefSchemaName>
       <RefTableName>student</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="35" parent="9" name="fk_student_course_courseId">
+      <ColNames>courseId</ColNames>
+      <RefSchemaName>db_1702</RefSchemaName>
+      <RefTableName>course</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
   </database-model>

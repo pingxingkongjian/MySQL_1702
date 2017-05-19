@@ -31,3 +31,19 @@ INSERT INTO scott.emp(EMPNO,ENAME)VALUES (2222,'A_ADAMS');
 SELECT *
 FROM scott.emp
 WHERE ENAME REGEXP '[^a-c]+'; -- ^这个符号表示包含 a-c 之外的字符
+
+SELECT *
+FROM scott.emp
+WHERE HIREDATE RLIKE '';
+
+SELECT *
+FROM scott.emp
+WHERE DEPTNO NOT IN (10,20);
+
+SELECT *
+FROM scott.emp
+WHERE JOB NOT IN ('manager','clerk');
+
+SELECT *
+FROM scott.emp
+WHERE SAL NOT BETWEEN 2000 AND 3000; --  [min, max] , min )(max,

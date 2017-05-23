@@ -1,3 +1,5 @@
+package demo;
+
 import com.mysql.jdbc.Driver;
 
 import java.io.BufferedReader;
@@ -14,7 +16,7 @@ import java.sql.SQLException;
  * on 2017/5/16.
  */
 public class JDBC {
-    // JDBC Java Database Connectivity Java 语言数据库连接
+    // demo.JDBC Java Database Connectivity Java 语言数据库连接
     private static final String URL = "jdbc:mysql://127.0.0.1:3306/db_1702";
     private static final String USER = "root";
     private static final String PASSWORD = "system";

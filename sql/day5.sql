@@ -46,4 +46,26 @@ WHERE JOB NOT IN ('manager','clerk');
 
 SELECT *
 FROM scott.emp
-WHERE SAL NOT BETWEEN 2000 AND 3000; --  [min, max] , min )(max,
+WHERE SAL NOT BETWEEN 2000 AND 3000; --  [min, max] , min )(max,0
+
+SELECT ENAME  '名字', SAL  '基本工资'
+  FROM scott.emp;
+
+SELECT e.ENAME
+  FROM scott.emp AS e;
+
+SELECT *
+FROM scott.emp
+WHERE DEPTNO IS NOT NULL ;
+
+SELECT *
+FROM scott.emp
+WHERE COMM IS NULL ;
+
+UPDATE scott.emp
+    SET JOB = null
+WHERE ENAME = 'jones';
+
+SELECT ENAME,
+  SAL + ifnull(COMM,0)
+  FROM scott.emp;

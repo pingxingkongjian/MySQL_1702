@@ -23,7 +23,7 @@ public class JDBC {
     private static final String SQL = "INSERT INTO db_1702.course VALUES (NULL, 'Front-end', 2 )";
     public static void main(String[] args) throws SQLException {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader ("sql/ip.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader ("data/ip.txt"));
             String line;
             while ((line = reader.readLine()) != null) {
             String min = line.split("\\s+")[0];

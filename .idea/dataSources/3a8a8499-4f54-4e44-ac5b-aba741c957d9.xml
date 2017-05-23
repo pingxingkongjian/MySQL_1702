@@ -74,10 +74,12 @@
     </column>
     <column id="29" parent="10" name="max">
       <Position>3</Position>
+      <Comment>终止 IP 地址</Comment>
       <DataType>varchar(255)|0</DataType>
     </column>
     <column id="30" parent="10" name="geo">
       <Position>4</Position>
+      <Comment>地理位置</Comment>
       <DataType>varchar(255)|0</DataType>
     </column>
     <key id="31" parent="10" name="PRIMARY">

@@ -67,6 +67,12 @@ WHERE e2.ENAME = 'scott';
 # 13. 返回部门号、部门名、部门所在位置及其每个部门的员工总数
 
 # 14. 返回员工的姓名、所在部门名及其工资
+SELECT *
+FROM scott.emp;
+
+SELECT *
+FROM scott.dept;
+
 SELECT
   e.ENAME,
   d.DNAME,
